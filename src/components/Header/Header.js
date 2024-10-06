@@ -10,7 +10,7 @@ import Button from '../Button';
 
 const Header = () => {
 	return (
-		<WrapHeader>
+		<header>
 			<SuperHeader>
 				<Row>
 					<ActionGroup>
@@ -22,46 +22,37 @@ const Header = () => {
 						</button>
 					</ActionGroup>
 					<ActionGroup>
-						<UserButton>
-							<button>
-								<User size={24}/>
-							</button>
-						</UserButton>
-						<ButtonWrapper>
-							<Button>
-								Subscripe
-							</Button>
-							<MemberLink>
-								Allready a member?
-							</MemberLink>
-						</ButtonWrapper>
+						<button>
+							<User size={24}/>
+						</button>
 					</ActionGroup>
 				</Row>
 			</SuperHeader>
 			<MainHeader>
+				<DesktopActionGroup>
+					<button>
+						<Search size={24}/>
+					</button>
+					<button>
+						<Menu size={24}/>
+					</button>
+				</DesktopActionGroup>
 				<Logo/>
+				<SubscribeWrapper>
+					<Button>Subscribe</Button>
+					<Sublink href="/">Already a subscriber?</Sublink>
+				</SubscribeWrapper>
 			</MainHeader>
-		</WrapHeader>
+		</header>
 	);
 };
-
-
-const WrapHeader = styled.header`
-  @media (min-width: 1440px) {
-	padding-top: 12px;
-	padding-bottom: 72px;
-		
-  }
-`;
-
 
 const SuperHeader = styled.div`
   padding: 16px 0;
   background: var(--color-gray-900);
   color: white;
-  @media (min-width: 1440px) {
-	background-color: transparent;
-	color: var(--color-gray-900);
+	@media ${QUERIES.laptopAndUp} {
+		display: none;
   }
 `;
 
@@ -90,33 +81,47 @@ const MainHeader = styled(MaxWidthWrapper)`
   justify-content: center;
   margin-top: 32px;
   margin-bottom: 48px;
-  @media (min-width: 1440px) {
-	margin-top: -100px;
-	margin-bottom: 0;
+	@media ${QUERIES.tabletAndUp} {
+		margin-top: 48px;
+		margin-bottom: 72px;
+  }
+	@media ${QUERIES.laptopAndUp} {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+		align-items: center;
+		justify-content: revert;
+		justify-items: start;
+		margin-top: 16px;
+		margin-bottom: 72px;
+	}
+`;
+
+const DesktopActionGroup = styled(ActionGroup)`
+	display: none;
+	@media ${QUERIES.laptopAndUp} {
+		display: flex;
   }
 `;
 
-const UserButton = styled.div`
-	display: block;
-	@media (min-width: 1440px) {
-		display: none;
+const SubscribeWrapper = styled.div`
+	display: none;
+	@media ${QUERIES.laptopAndUp} {
+		display: revert;
+		position: relative;
+		justify-self: end;
   }
 `;
 
-const ButtonWrapper = styled.div`
-  display: none;
-  @media (min-width: 1440px) {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-		gap: 5px;
-  }
+const Sublink = styled.a`
+  position: absolute;
+	width: 100%;
+	margin-top: 8px;
+	text-align: center;
+	font-size: 0.875rem;
+	color: var(--color-gray-900);
+	font-style: italic;
+	text-decoration: underline;
 `;
-const MemberLink = styled.a`
-  font-style: italic;
-  font-size: 18px;
-  text-decoration: underline;
 
-`;
 
 export default Header;
