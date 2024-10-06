@@ -2,7 +2,7 @@
 
 In this workshop, our goal is to build a sophisticated, responsive grid layout for an online newspaper, the New Grid Times:
 
-![Desktop-sized mockup](/docs/desktop-mockup.png)
+![Desktop-sized mockup](./docs/desktop-mockup.png)
 
 ## Code structure
 
@@ -62,7 +62,7 @@ Like in the Sole&Ankle workshop, this workshop features a two-step header that c
 
 This workshop has been created with a "Mobile-first" methodology, and so your goal this time is to create a desktop variant of the header, and ensure the right header is used at both viewport sizes.
 
-![Highlighted screenshot showing the header of the mockup](/docs/header-cutout.png)
+![Highlighted screenshot showing the header of the mockup](./docs/header-cutout.png)
 
 ---
 
@@ -76,11 +76,11 @@ This exercise is split into a few mini-parts:
 
 In the mockup, our main story's preview text is truncated on mobile after 8 lines of text:
 
-![Close-up of the preview text on mobile](/docs/text-truncation-mobile.png)
+![Close-up of the preview text on mobile](./docs/text-truncation-mobile.png)
 
 The exact # of lines shown depends on the viewport size. For example, the amount of lines doubles on tablet:
 
-![Close-up of the preview text on mobile](/docs/text-truncation-tablet.png)
+![Close-up of the preview text on mobile](./docs/text-truncation-tablet.png)
 
 > **Note:** on certain screen sizes, you may see an ellipsis alone on its own line. Don't worry about trying to solve for this.
 
@@ -90,7 +90,7 @@ The syntax for multi-line ellipsis is difficult to remember, so you might wish t
 
 There are also dividers between the stories that are in lists, like the secondary and opinion stories:
 
-![Close-up showing the thin dividers between stories on mobile](/docs/dividers.png)
+![Close-up showing the thin dividers between stories on mobile](/Users/testuser/Documents/Projekte/tutorial/css-for-js/new-grid-times/docs/dividers.png)
 
 Critically, the borders only run _between_ stories. Not above the top story, or below the last story.
 
