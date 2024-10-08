@@ -90,7 +90,7 @@ The syntax for multi-line ellipsis is difficult to remember, so you might wish t
 
 There are also dividers between the stories that are in lists, like the secondary and opinion stories:
 
-![Close-up showing the thin dividers between stories on mobile](/Users/testuser/Documents/Projekte/tutorial/css-for-js/new-grid-times/docs/dividers.png)
+![Close-up showing the thin dividers between stories on mobile](./docs/dividers.png)
 
 Critically, the borders only run _between_ stories. Not above the top story, or below the last story.
 
