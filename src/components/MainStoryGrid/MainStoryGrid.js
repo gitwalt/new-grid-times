@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components/macro';
 
 import {
-  MAIN_STORY,
-  OPINION_STORIES,
-  SECONDARY_STORIES,
+	MAIN_STORY,
+	OPINION_STORIES,
+	SECONDARY_STORIES,
 } from '../../data';
 
 import SectionTitle from '../SectionTitle';
@@ -14,34 +14,38 @@ import OpinionStory from '../OpinionStory';
 import Advertisement from '../Advertisement';
 
 const MainStoryGrid = () => {
-  return (
-    <Wrapper>
-      <MainStorySection>
-        <MainStory {...MAIN_STORY} />
-      </MainStorySection>
+	return (
+		<Wrapper>
+			<MainStorySection>
+				<MainStory {...MAIN_STORY} />
+			</MainStorySection>
 
-      <SecondaryStorySection>
-        <StoryList>
-          {SECONDARY_STORIES.map((story, index) => (
-            <SecondaryStory key={story.id} {...story} />
-          ))}
-        </StoryList>
-      </SecondaryStorySection>
+			<SecondaryStorySection>
+				<StoryList>
+					{SECONDARY_STORIES.map((story, index) => (
+						<VerticalStoryWrapper>
+							<SecondaryStory key={story.id} {...story} />
+						</VerticalStoryWrapper>
+					))}
+				</StoryList>
+			</SecondaryStorySection>
 
-      <OpinionSection>
-        <SectionTitle>Opinion</SectionTitle>
-        <StoryList>
-          {OPINION_STORIES.map((story, index) => (
-            <OpinionStory key={story.id} {...story} />
-          ))}
-        </StoryList>
-      </OpinionSection>
+			<OpinionSection>
+				<SectionTitle>Opinion</SectionTitle>
+				<StoryList>
+					{OPINION_STORIES.map((story, index) => (
+						<VerticalStoryWrapper>
+							<OpinionStory key={story.id} {...story} />
+						</VerticalStoryWrapper>
+					))}
+				</StoryList>
+			</OpinionSection>
 
-      <AdvertisementSection>
-        <Advertisement />
-      </AdvertisementSection>
-    </Wrapper>
-  );
+			<AdvertisementSection>
+				<Advertisement/>
+			</AdvertisementSection>
+		</Wrapper>
+	);
 };
 
 const Wrapper = styled.div`
@@ -66,10 +70,13 @@ const SecondaryStorySection = styled.section`
 const StoryList = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  a:not(:last-child) {
-    padding-bottom: 16px;
-    border-bottom: 1px solid var(--color-gray-300);
+`;
+
+const VerticalStoryWrapper = styled.div`
+  &:not(:last-of-type) {
+	border-bottom: 1px solid var(--color-gray-300);
+	padding-bottom: 16px;
+	margin-bottom: 16px;
   }
 `;
 
