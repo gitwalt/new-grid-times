@@ -12,6 +12,7 @@ import MainStory from '../MainStory';
 import SecondaryStory from '../SecondaryStory';
 import OpinionStory from '../OpinionStory';
 import Advertisement from '../Advertisement';
+import {QUERIES} from "../../constants";
 
 const MainStoryGrid = () => {
 	return (
@@ -70,6 +71,11 @@ const SecondaryStorySection = styled.section`
 const StoryList = styled.div`
   display: flex;
   flex-direction: column;
+	@media ${QUERIES.tabletOnly} {
+		
+		
+		
+  }
 `;
 
 const VerticalStoryWrapper = styled.div`
