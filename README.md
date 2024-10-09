@@ -100,7 +100,7 @@ A good place to start is in `MainStoryGrid.js`. That's where all of these storie
 
 Opinion stories show a picture of the journalist. On mobile, this image is meant to be shifted off to the side:
 
-![Close-up of the Opinion section on mobile, highlighting the avatars](/docs/mobile-avatar-position.png)
+![Close-up of the Opinion section on mobile, highlighting the avatars](./docs/mobile-avatar-position.png)
 
 This same layout is used on laptop, but not on tablet. Update it across all relevant viewport sizes.
 
@@ -120,7 +120,7 @@ In the last exercise, we updated our "Opinion" stories so that the avatar was sh
 
 In our new tablet grid, the opinion section itself takes on a different layout:
 
-![Close-up of the Opinion section on tablet, showing the new layout](/docs/opinion-row.png)
+![Close-up of the Opinion section on tablet, showing the new layout](./docs/opinion-row.png)
 
 Our stories are arranged horizontally in a row, instead of vertically in a column. The borders between stories disappear.
 
