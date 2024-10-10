@@ -25,7 +25,6 @@ const Wrapper = styled.article`
 	gap: 16px;
   @media ${QUERIES.tabletOnly} {
 		display: revert;
-		
   }
 `;
 
