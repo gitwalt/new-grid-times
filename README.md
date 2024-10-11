@@ -132,17 +132,17 @@ Similarly, on tablet, our `SecondaryStory` switches to a new layout.
 
 On mobile/laptop:
 
-![Close-up of a "secondary" story on mobile](/docs/secondary-mobile.png)
+![Close-up of a "secondary" story on mobile](./docs/secondary-mobile.png)
 
 On tablet:
 
-![Close-up of a "secondary" story on tablet](/docs/secondary-tablet.png)
+![Close-up of a "secondary" story on tablet](./docs/secondary-tablet.png)
 
 ### Grid dividers
 
 When our grid grows to have multiple columns, we want to add a thin grey line between the columns:
 
-![Highlighted screenshot of the dividers between rows and columns on the desktop grid](/docs/desktop-dividers.png)
+![Highlighted screenshot of the dividers between rows and columns on the desktop grid](./docs/desktop-dividers.png)
 
 We discuss strategies for this situation in the [“Grid Dividers” lesson](https://courses.joshwcomeau.com/css-for-js/07-css-grid/11-grid-dividers).
 
@@ -160,11 +160,11 @@ On mobile, we can use the [“World Famous” grid snippet](https://courses.josh
 
 When we get to the larger viewports, though, the sports stories operate a little bit differently: they form a single long line, with overflow to allow us to scroll horizontally:
 
-![Highlighted screenshot of the dividers between rows and columns on the desktop grid](/docs/sports-overflow.gif)
+![Highlighted screenshot of the dividers between rows and columns on the desktop grid](./docs/sports-overflow.gif)
 
 Finally, on large viewports, we want the market and sports sections to sit side-by-side, with a divider:
 
-![Highlighted screenshot of the dividers between rows and columns on the desktop grid](/docs/specialty-grid-desktop.png)
+![Highlighted screenshot of the dividers between rows and columns on the desktop grid](./docs/specialty-grid-desktop.png)
 
 ---
 
