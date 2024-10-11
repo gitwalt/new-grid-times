@@ -174,15 +174,15 @@ Last but not least, the footer!
 
 There are some alignment changes between different viewport sizes, like the `TopRow` and `SubFooter`:
 
-![Highlighted screenshot of the alignment of the top/bottom elements in the footer on desktop](/docs/footer-diagonals.png)
+![Highlighted screenshot of the alignment of the top/bottom elements in the footer on desktop](./docs/footer-diagonals.png)
 
 We also need to switch from a vertical list to a dynamic grid, for the main nav links:
 
-![Screenshot of the footer's main nav on tablet](/docs/footer-main-nav-tablet.png)
+![Screenshot of the footer's main nav on tablet](./docs/footer-main-nav-tablet.png)
 
 Finally, we want the columns on desktop to be equally-spaced:
 
-![Screenshot of the footer's main nav on desktop](/docs/footer-link-alignment.png)
+![Screenshot of the footer's main nav on desktop](./docs/footer-link-alignment.png)
 
 ---
 
